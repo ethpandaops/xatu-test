@@ -21,7 +21,7 @@ jobs:
       - name: Run Docker Compose in remote repo
         run: |
           cd xatu
-          CHVER=25.7.5 docker compose --profile clickhouse up -d
+          CHVER=25.5.10 docker compose --profile clickhouse up -d
       - name: Wait for service on port 8123 to be up
         run: |
           timeout=60 # wait for up to 60 seconds
